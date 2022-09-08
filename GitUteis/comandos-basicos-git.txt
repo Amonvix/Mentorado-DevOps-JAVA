@@ -1,0 +1,38 @@
+Comandos uteis apreciados por mim no uso do Github via comandos Git no Terminal do Linux
+
+
+$ git clone "url do repositorio"  >>  comando usado para clonar o repositorio existente no Github
+
+	
+	COMANDOS LOCAIS - Comandos relacionados a tratativa dos arquivos na maquina
+	
+	
+$ git status  >>  mostra o status do repositorio localmente, exibindo as alterações feitas e pendentes de commit
+$ git add ./"nome do arquivo"  >>  prepara o arquivo para receber o commit antes de ser enviado
+$ git add --all  >>  prepara todos os arquivo para receberem um commit grupal antes de serem enviados
+$ git add.  >>  prepara a pasta para receber o commit antes de ser enviada
+$ git commit -m "mensagem commitada"  >>  comando usado para "commitar" a mudança feita. Breve descritivo do que está sendo enviado para o Github
+$ git log  >>  mostra todas as commit efetuadas que ainda não foram enviadas para o Github
+$ git log --  >>  mostra todas as commit efetuadas que ainda não foram enviadas para o Github, de uma forma mais grafica.
+
+
+	COMANDOS COLAB - Comandos relacionados a preparação para compartilhamento
+	
+	
+$ git branch  >>  exibe a localização atual entre as branchs existentes
+$ git branch "nome da branch"  >>  cria uma branch com o nome indicado
+$ git checkout "nome da branch"  >>  acessa a branch já existente com o nome indicado
+$ git checkout -b  "nome da branch">>  cria uma nova branch com o nome informado e ja acessa a mesma.
+
+
+	COMANDOS REMOTO - Comandos relacionados ao envio dos arquivos para o Github
+	
+	
+$ git push origin "nome da branch"  >>  envia todas as alterações efetuadas e commitadas para a branch "Main"
+$ git pull origin "nome da branch"  >>  atualiza as informações da branch indicada, na maquina
+$ git pull  >>  atualiza as informações da branch em que estiver ativo, na maquina
+
+
+ *** Nota importante:
+ 
+ Todas as alterações somente serão atualizadas no Github após a aprovação e merge da parte responsável. (dono do repositório ou pessoa indicada)
