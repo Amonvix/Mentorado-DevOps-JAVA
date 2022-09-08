@@ -1,0 +1,33 @@
+Os comandos aqui mencionados foram coletados das aulas de desenvolvimento Full Stack
+
+
+Comandos de terminal:
+
+whoami -- printa  o usuario logado na tela
+echo -- printa o texto na tela
+pwd -- mostra o diretorio
+cd -- muda de diretorio
+	cd .. retorna para o diretorio anterior
+ls -- lista os itens do diretorio
+	ls -a -- lista tudo mais os itens ocultos
+	ls -l -- lista os itens com detalhes
+	ls -la -- soma dos resultados anteriores
+touch -- comando usado para criar arquivos "arquivo.ext"
+mkdir -- comando usado na criacao de pastas/diretorio
+rm -- remove o arquivo (comando do mal, não pode ser revertido)
+	rm ./arquivo.ext -- remove o arquivo.ext
+	rm -r ./nome-da-pasta -- remove a pasta
+	rm -fr ./nome-da-pasta -- remove a pasta no modo enforced
+mv -- move arquivos entre diretorios
+	mv ./arquivo.ext ./pasta-destino -- move o arquivo.ext para a pasta pasta-destino
+	mv ./arquivo.ext ./novo-nome.ext -- Gambi usada para renomear arquivo
+cp -- comando que copia um arquivo para outro diretorio
+	cp ./arquivo.ext ./pasta-destino -- copia o arquivo.ext para a pasta pasta-destino
+cat -- concatena o arquivo apontado
+	cat arquivo.ext -- exibe todo o conteudo de texto do arquivo arquivo.ext
+head -- imprime as 10 primeiras linhas do arquivo
+	head -n x -- imprime x linhas do inicio do arquivo
+tail -- imprime as 10 ultimas linhas do arquivo
+	tail -n x -- imprime x linhas do final do arquivo
+grep -- permite buscar conteudo em um arquivo
+	grep conteudo ./arquivo.ext -- busca "conteudo" no arquivo.ext
