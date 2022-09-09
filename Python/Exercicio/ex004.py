@@ -1,0 +1,8 @@
+a = input('Digite qualquer coisa: ')
+print('é um numeral: ', a.isnumeric())
+print('é escrevevivel: ', a.isprintable())
+print('é alfanumerico:', a.isalnum())
+print('é minusculo:', a.islower())
+print('é maiusculo:', a.isupper())
+print('é um digito:', a.isdigit())
+print(type(a))
