@@ -1,18 +1,21 @@
 package fundamentos;
 
 public class AreaCircunferencia {
+	
+	public static void main(String[] args) {
+		
+		double raio = 100;							//declaração e atribuição de valor a variavel double raio
+		final double PI = 3.1416;					//declaração e atribuição de valor a constante double PI
+		double area = PI * raio * raio;				//declaração e atribuição de valor a variavel double
+		
+		System.out.println("Área = " + area);		//Exibição do calculo com concatenação de texto
+		
+		raio = 15;									//atribuição de novo valor à variavel raio
+		area = PI * raio * raio;					//acionamento de calculo com os novos valores
+	
 
-	public static void main(String[] args) 
-	{
-		double raio = 3.4;
-		final double PI = 3.14159;
-				//final define como constante o valor atribuido. Constantes são sempre caixa alta
-		double area = PI * raio * raio;
+		System.out.println("Área = " + area);		//Exibição do calculo com concatenação de texto
 		
-		System.out.println(area);
-		
-		raio = 10;
-		area = PI * raio * raio;
-		System.out.println("Área = " + area + " m2.");
 	}
+
 }
