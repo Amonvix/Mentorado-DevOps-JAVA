@@ -1,8 +1,11 @@
 package fundamentos;
 
 public class TipoString {
+
 	
 //	arquivo criado para entendimento dos tipos de operadores a ser empregados em Strings
+	
+	
 	
 	public static void main(String[] args) {
 		
@@ -19,7 +22,7 @@ public class TipoString {
 		System.out.println(s.toUpperCase());		// Altera a variavel para o valor em caixa baixa
 		System.out.println(s.length());				// Efetua a contagem de caracteres na string (incluindo espaços)
 		System.out.println(s.equals("boa tarde"));	// Verifica a igualdade da string com a variavel
-		System.out.println(s.equalsIgnoreCase("boa tarde"));	// A mesma verificação que a anterior, porém sem a ser Case sensitive
+		System.out.println(s.equalsIgnoreCase("boa tarde"));	// A mesma verificação que a anterior, porém sem a ser Case sensitive 
 		
 		var nome = "Pedro";			// Inferido tipo String na variavel
 		var sobrenome = "Santos";	// Inferido tipo String na variavel
@@ -30,11 +33,6 @@ public class TipoString {
 		
 		System.out.printf("O Senhor %s %s, tem %d anos e recebe mensalmente o montante de R$ %.2f.",nome , sobrenome , idade , salario ); // modo printf de exibir o resultado formatado
 
-		
-		
-		
-		
-		
 	}
-
+	
 }
