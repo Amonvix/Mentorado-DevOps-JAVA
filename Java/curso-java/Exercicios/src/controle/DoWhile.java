@@ -16,7 +16,7 @@ public class DoWhile {
 			System.out.println("Quer sair?... ");
 			texto = entrada.nextLine();
 			
-		} while (!texto.equalsIgnoreCase("por favor"));
+		} while (!texto.equalsIgnoreCase("por favor")); // validação de string
 		
 		System.out.println("Obrigado");
 		entrada.close();
