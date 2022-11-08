@@ -65,6 +65,7 @@ public class ExercicioFinal05 {
 		default:
 			System.out.printf("%d não é um número Primo", num);
 		}
+		entrada.close();
 		
 	}
 	
