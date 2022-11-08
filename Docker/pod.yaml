@@ -1,0 +1,10 @@
+apiVersion:
+kind:
+metadata:
+  name: meupod
+spec:
+  conatainers:
+  - name: site
+    image: amonvix/web-page:blue
+    ports:
+    - containerPort: 80
