@@ -10,7 +10,7 @@ public class Map {
     public static void main(String[] args) {
         
         
-        Consumer<String> print = System.out::print;
+        Consumer<String> print = System.out::println;
         
         List<String> marcas = Arrays.asList("bmw ","audi ","honda\n");
         
