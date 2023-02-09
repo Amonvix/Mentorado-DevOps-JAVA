@@ -23,7 +23,9 @@ public class Outros {
         classe.stream().distinct().forEach(System.out::println);
         
         System.out.println("\nSkip/Limit");
-        classe.stream().distinct().skip(2).limit(2).forEach(System.out::println);        
+        classe.stream().distinct()
+        .skip(2)
+        .limit(2).forEach(System.out::println);        
         
         System.out.println("\nTakeWile");
         classe.stream().distinct().skip(3).takeWhile(a -> a.nota >= 9).forEach(System.out::println);

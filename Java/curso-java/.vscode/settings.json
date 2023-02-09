@@ -1,0 +1,11 @@
+{
+    "java.debug.settings.onBuildFailureProceed": true,
+    "java.project.sourcePaths": [
+        "campo-minado"
+    ],
+    "java.dependency.syncWithFolderExplorer": true,
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "/home/daniel/Downloads/junit-4.13.2.jar"
+    ]
+}
