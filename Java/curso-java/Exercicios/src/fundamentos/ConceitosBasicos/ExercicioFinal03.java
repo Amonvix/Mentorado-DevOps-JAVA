@@ -17,7 +17,7 @@ public class ExercicioFinal03 {
 		
 		
 		System.out.print("E a sua altura?: (x,xx metros)");
-		String altura =  entrada.next().replace(",", ".");
+		String altura =  entrada.next();
 		double alt = Double.parseDouble(altura);
 		
 		alt = Math.pow(alt, 2);

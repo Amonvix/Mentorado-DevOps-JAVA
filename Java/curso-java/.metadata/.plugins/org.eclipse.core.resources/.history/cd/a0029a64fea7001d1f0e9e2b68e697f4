@@ -1,0 +1,15 @@
+package com.amon.cm.visao;
+
+import com.amon.cm.modelo.Tabuleiro;
+
+public class TabuleiroConsole {
+	
+	private Tabuleiro tabuleiro;
+
+	public TabuleiroConsole(Tabuleiro tabuleiro) {		
+		this.tabuleiro = tabuleiro;
+	}
+	
+	
+
+}

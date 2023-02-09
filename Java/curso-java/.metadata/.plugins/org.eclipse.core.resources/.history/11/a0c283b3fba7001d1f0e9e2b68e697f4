@@ -1,0 +1,19 @@
+package com.amon.cm;
+
+import com.amon.cm.modelo.Tabuleiro;
+
+public class Aplicacao {
+	
+	public static void main(String[] args) {
+		
+		Tabuleiro tabuleiro = new Tabuleiro(6, 6, 6);
+		
+		tabuleiro.abrir(1, 3);
+		tabuleiro.marcar(4, 4);
+		tabuleiro.marcar(4, 5);
+		
+		System.out.println(tabuleiro);
+		
+	}
+
+}
