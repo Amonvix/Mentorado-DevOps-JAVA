@@ -2,7 +2,8 @@ package excecao.personalizadaB;
 
 public class numeroForaIntervaloException extends Exception{
 
-    private String nomeDoAtributo;
+    private static final long serialVersionUID = 1L;
+	private String nomeDoAtributo;
 
     public numeroForaIntervaloException (String nomeDoAtributo){
         this.nomeDoAtributo = nomeDoAtributo;

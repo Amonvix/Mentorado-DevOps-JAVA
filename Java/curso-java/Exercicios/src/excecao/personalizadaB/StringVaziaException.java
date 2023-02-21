@@ -2,7 +2,8 @@ package excecao.personalizadaB;
 
 public class StringVaziaException extends Exception{
 
-    private String nomeDoAtributo;
+    private static final long serialVersionUID = 1L;
+	private String nomeDoAtributo;
 
     public StringVaziaException (String nomeDoAtributo){
         this.nomeDoAtributo = nomeDoAtributo;

@@ -1,0 +1,5 @@
+package Generics;
+
+public class CaixaInt<T> extends Caixa<T> {
+
+}
