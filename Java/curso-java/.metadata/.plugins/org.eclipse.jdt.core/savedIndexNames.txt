@@ -1,7 +1,6 @@
 INDEX VERSION 1.131+/home/daniel/Documentos/Java/curso-java/.metadata/.plugins/org.eclipse.jdt.core
 2578322825.index
 889852891.index
-4048133997.index
 4011784408.index
 3795561245.index
 736934088.index
