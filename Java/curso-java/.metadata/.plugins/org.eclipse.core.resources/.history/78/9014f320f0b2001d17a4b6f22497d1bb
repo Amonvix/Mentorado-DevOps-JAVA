@@ -1,0 +1,5 @@
+package com.amon.cm.visao;
+
+public interface EventosMouse {
+
+}

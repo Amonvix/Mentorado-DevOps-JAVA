@@ -1,5 +1,0 @@
-package com.amon.cm.excecao;
-
-public class SairException {
-
-}

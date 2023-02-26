@@ -1,0 +1,68 @@
+package com.amon.cm.visao;
+
+import java.awt.Color;
+
+import javax.swing.BorderFactory;
+import javax.swing.JButton;
+
+import com.amon.cm.modelo.Campo;
+import com.amon.cm.modelo.CampoEvento;
+import com.amon.cm.modelo.CampoObservador;
+
+@SuppressWarnings("serial")
+public class BotaoCampo extends JButton implements CampoObservador{
+	
+	private Campo campo;
+	private final Color BG_PADRAO = new Color(184,184,184);
+	private final Color BG_MARCAR = new Color(8,179,247);
+	private final Color BG_EXPLODIR = new Color(189,66,68);
+	private final Color BG_ABERTO = new Color(0,220,200);
+	
+	public BotaoCampo(Campo campo) {
+		this.campo= campo;
+		setBorder(BorderFactory.createBevelBorder(0));
+		setBackground(BG_ABERTO);
+		
+		
+		campo.registrarObservador(this);
+		
+		
+
+	}
+
+	public void eventoOcorreu(Campo campo, CampoEvento evento) {
+		switch (evento) {
+		case ABRIR:
+			aplicarEstiloAbrir();
+			setBackground(BG_ABERTO);
+			break;
+		case MARCAR:
+			aplicarEstiloMarcar();
+			setBackground(BG_MARCAR);
+			break;
+		case EXPLODIR:
+			aplicarEstiloExplodir();
+			setBackground(BG_EXPLODIR);
+			break;
+		default:
+			aplicarEstiloPadrao();
+			setBackground(BG_PADRAO);
+		}		
+	}
+
+	private void aplicarEstiloPadrao() {
+		
+	}
+
+	private void aplicarEstiloExplodir() {
+		
+	}
+
+	private void aplicarEstiloMarcar() {
+		
+	}
+
+	private void aplicarEstiloAbrir() {
+		
+	}
+}

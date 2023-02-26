@@ -1,0 +1,24 @@
+package Swing;
+
+import java.awt.FlowLayout;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+
+public class Observador {
+
+	public static void main(String[] args) {
+		
+		JFrame janela = new JFrame("Observador");					// cria um objeto WINDOW
+		janela.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);	// define o fechamento do programa ao clicar em fechar
+		janela.setSize(300, 200);									// informa o tamanho da janela exibida
+		janela.setLayout(new FlowLayout());							// cria um layout para o botão com base no texto
+		janela.setLocationRelativeTo(null);		
+		
+		JButton botao = new JButton("Aperte com carinho");
+//		botao.setSize(80,80);
+		janela.add(botao);
+		
+		janela.setVisible(true);
+	}
+}

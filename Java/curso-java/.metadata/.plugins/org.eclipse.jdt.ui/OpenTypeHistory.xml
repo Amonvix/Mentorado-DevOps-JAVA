@@ -1,2 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<typeInfoHistroy/>
+<typeInfoHistroy>
+    <typeInfo handle="=Exercicios/\/snap\/eclipse\/66\/plugins\/org.eclipse.justj.openjdk.hotspot.jre.full.linux.x86_64_17.0.5.v20221102-0933\/jre\/lib\/jrt-fs.jar`java.desktop=/javadoc_location=/https:\/\/docs.oracle.com\/en\/java\/javase\/17\/docs\/api\/=/=/module=/true=/&lt;java.awt.event(KeyEvent.class[KeyEvent" modifiers="33" timestamp="1667381888000"/>
+    <typeInfo handle="=Exercicios/\/snap\/eclipse\/66\/plugins\/org.eclipse.justj.openjdk.hotspot.jre.full.linux.x86_64_17.0.5.v20221102-0933\/jre\/lib\/jrt-fs.jar`java.base=/javadoc_location=/https:\/\/docs.oracle.com\/en\/java\/javase\/17\/docs\/api\/=/=/module=/true=/&lt;java.util(Scanner.class[Scanner" modifiers="49" timestamp="1667381888000"/>
+    <typeInfo handle="=Exercicios/\/snap\/eclipse\/66\/plugins\/org.eclipse.justj.openjdk.hotspot.jre.full.linux.x86_64_17.0.5.v20221102-0933\/jre\/lib\/jrt-fs.jar`java.desktop=/javadoc_location=/https:\/\/docs.oracle.com\/en\/java\/javase\/17\/docs\/api\/=/=/module=/true=/&lt;java.awt.event(ActionListener.class[ActionListener" modifiers="1537" timestamp="1667381888000"/>
+</typeInfoHistroy>
