@@ -45,5 +45,6 @@ searchResultIndication=true
 searchResultIndicationColor=68,71,90
 searchResultTextStyle=BOX
 secondaryIPColor=68,71,90
+spellingEnabled=false
 spellingIndicationColor=253,170,211
 writeOccurrenceIndicationColor=68,71,90

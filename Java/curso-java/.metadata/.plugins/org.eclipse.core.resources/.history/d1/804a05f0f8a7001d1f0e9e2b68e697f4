@@ -1,9 +1,0 @@
-package com.amon.cm;
-
-public class Aplicacao {
-	
-	public static void main(String[] args) {
-		
-	}
-
-}
