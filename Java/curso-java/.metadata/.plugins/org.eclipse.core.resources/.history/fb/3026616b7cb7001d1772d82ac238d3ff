@@ -1,0 +1,7 @@
+package com.amon.calculadora.visao;
+
+import javax.swing.JPanel;
+
+public class Display extends JPanel{
+
+}
