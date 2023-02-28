@@ -1,0 +1,48 @@
+package com.amon.calculadora.visao;
+
+import java.awt.BorderLayout;
+import java.awt.Color;
+import java.awt.GridLayout;
+
+import javax.swing.JPanel;
+
+@SuppressWarnings("serial")
+public class Teclado extends JPanel{
+	
+	private final Color cinza = new Color(68,68,68);
+	private final Color laranja = Color.ORANGE; 
+	private final Color claro = Color.LIGHT_GRAY; 
+	private final Color verde = Color.GREEN;
+	
+	
+	
+	public Teclado() {
+		
+		
+		setLayout(new GridLayout(5,4));
+		
+		add(new Botao("<=", cinza));
+		add(new Botao("+/-", cinza));
+		add(new Botao("%", cinza));
+		add(new Botao("/", laranja));
+		
+		add(new Botao("7", cinza));
+		add(new Botao("8", cinza));
+		add(new Botao("9", cinza));
+		add(new Botao("-", laranja));
+		
+		add(new Botao("4", cinza));
+		add(new Botao("5", cinza));
+		add(new Botao("6", cinza));
+		add(new Botao("+", laranja));
+		
+		add(new Botao("1", cinza));
+		add(new Botao("2", cinza));
+		add(new Botao("3", cinza));
+		add(new Botao("=", laranja));
+		
+		add(new Botao("0", cinza));
+		
+	}
+
+}

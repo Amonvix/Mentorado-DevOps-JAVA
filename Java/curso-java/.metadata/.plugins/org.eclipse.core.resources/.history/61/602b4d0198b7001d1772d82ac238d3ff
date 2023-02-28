@@ -1,0 +1,17 @@
+package com.amon.calculadora.visao;
+
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+
+@SuppressWarnings("serial")
+public class Display extends JPanel{
+	
+	private final JLabel label;
+
+	public Display() {
+		
+		label = new JLabel("123456,78");
+		
+		add(label);
+	}
+}
