@@ -1,0 +1,64 @@
+package com.amon.calculadora.visao;
+
+import java.awt.Color;
+import java.awt.GridBagConstraints;
+import java.awt.GridBagLayout;
+import java.awt.GridLayout;
+
+import javax.swing.JPanel;
+
+@SuppressWarnings("serial")
+public class Teclado extends JPanel{
+	
+	private final Color vermelho = Color.RED;
+	private final Color cinza = new Color(68,68,68);
+	private final Color claro = new Color(99,99,99); 
+	private final Color laranja = new Color(242,163,60);
+	private final Color verde = Color.GREEN;
+	
+	
+	
+	public Teclado() {
+		
+		
+		GridBagLayout layout = new GridBagLayout();
+		GridBagConstraints c = new GridBagConstraints();
+		
+		setLayout(layout);
+		
+		adicionarBotao("<=", vermelho, c, 0, 0);		
+		adicionarBotao("+/-", cinza, c, 1, 0);
+		adicionarBotao("%", cinza, c, 2, 0);
+		adicionarBotao("/", laranja, c, 3, 0);
+		
+		adicionarBotao("7", claro, c, 0, 1);
+		adicionarBotao("8", claro, c, 1, 1);
+		adicionarBotao("9", claro, c, 2, 1);
+		adicionarBotao("*", laranja, c, 3, 1);
+		
+		adicionarBotao("4", claro, c, 0, 2);
+		adicionarBotao("5", claro, c, 1, 2);
+		adicionarBotao("6", claro, c, 2, 2);
+		adicionarBotao("-", laranja, c, 3, 2);
+		
+		adicionarBotao("1", claro, c, 0, 3);
+		adicionarBotao("2", claro, c, 1, 3);
+		adicionarBotao("3", claro, c, 2, 3);
+		adicionarBotao("+", laranja, c, 3, 3);
+		
+		adicionarBotao("0", claro, c, 0,4);
+		adicionarBotao("=", verde, c, 3, 4);
+		
+	}
+
+
+
+	private void adicionarBotao(String texto, Color cor, GridBagConstraints c, int x, int y) {
+		c.gridx = x;
+		c.gridy = y;
+		Botao botao = new Botao(texto, cor);
+		add(botao,c);
+		
+	}
+
+}
