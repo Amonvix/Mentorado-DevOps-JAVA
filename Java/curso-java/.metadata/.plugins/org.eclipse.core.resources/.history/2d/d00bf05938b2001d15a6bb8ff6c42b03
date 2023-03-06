@@ -1,5 +1,0 @@
-package com.amon.cm.modelo;
-
-public interface CampoObservador {
-
-}

@@ -3,13 +3,17 @@ package com.amon.calculadora.visao;
 import java.awt.Color;
 import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
+import javax.swing.JButton;
 import javax.swing.JPanel;
 
+import com.amon.calculadora.modelo.Memoria;
+
 @SuppressWarnings("serial")
-public class Teclado extends JPanel{
+public class Teclado extends JPanel implements ActionListener{
 	
-	private final Color vermelho = Color.RED;
 	private final Color cinza = new Color(68,68,68);
 	private final Color claro = new Color(99,99,99); 
 	private final Color laranja = new Color(242,163,60);
@@ -29,10 +33,10 @@ public class Teclado extends JPanel{
 		
 		c.fill= GridBagConstraints.BOTH;
 		
-		c.gridwidth = 2;
-		adicionarBotao("CLEAR", vermelho, c, 0, 0);		
+		c.gridwidth = 3;
+		adicionarBotao("CLEAR", cinza, c, 0, 0);		
 		c.gridwidth = 1;
-		adicionarBotao("%", cinza, c, 2, 0);
+		
 		adicionarBotao("/", laranja, c, 3, 0);
 		
 		adicionarBotao("7", claro, c, 0, 1);
@@ -65,7 +69,17 @@ public class Teclado extends JPanel{
 		c.gridx = x;
 		c.gridy = y;
 		Botao botao = new Botao(texto, cor);
+		botao.addActionListener(this);
 		add(botao,c);
+		
+	}
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		if(e.getSource() instanceof JButton) {
+			JButton botao= (JButton) e.getSource();
+			Memoria.getInstacia().processarComando(botao.getText());
+			
+		}
 		
 	}
 
