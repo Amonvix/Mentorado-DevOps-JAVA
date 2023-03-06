@@ -1,0 +1,7 @@
+package com.amon.calculadora.modelo;
+
+public enum Operadores {
+	
+	
+
+}

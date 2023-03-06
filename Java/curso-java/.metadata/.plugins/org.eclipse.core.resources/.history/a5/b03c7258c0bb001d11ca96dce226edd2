@@ -1,0 +1,84 @@
+package com.amon.calculadora.modelo;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Memoria {
+	
+	private enum TipoComando{
+		ZERAR, NUMERO, DIV, MULT, SUB, SOMA, IGUAL, VIRG, PORC;
+	};
+	
+	private static final Memoria instancia = new Memoria();
+	
+	private List<MemoriaObservador> observadores =  new ArrayList<>();
+	
+	private String textoAtual = "";		
+
+	private Memoria() {
+
+	}
+	
+	public static Memoria getInstacia() {
+		return instancia;
+		
+	}
+	
+	public void adicionarObservador(MemoriaObservador o) {
+		observadores.add(o);
+	}	
+	
+	public String getTextoAtual() {
+		return textoAtual.isEmpty() ? "0" : textoAtual;
+	}
+	
+	public void processarComando(String texto) {
+		
+		TipoComando tipoComando = detectarTipoComando(texto);
+		
+		System.out.println(tipoComando);
+		
+		if("CLEAR".equals(texto)) {
+			textoAtual = "";
+		}else {
+			textoAtual += texto;
+		}
+		
+		observadores.forEach(o -> o.valorAlterado(getTextoAtual()));
+	}
+
+	private TipoComando detectarTipoComando(String texto) {
+		
+		if(textoAtual.isEmpty() && texto == "0") {
+			return null;
+		}
+		
+		try {
+			Integer.parseInt(texto);
+			return TipoComando.NUMERO;
+		} catch (NumberFormatException e) {
+			
+			if("CLEAR".equals(texto)) {
+				return TipoComando.ZERAR;
+			}else if ("/".equals(texto)) {
+				return TipoComando.DIV;
+			}else if ("+".equals(texto)) {
+				return TipoComando.SOMA;
+			}else if ("-".equals(texto)) {
+				return TipoComando.SUB;
+			}else if ("*".equals(texto)) {
+				return TipoComando.MULT;
+			}else if ("%".equals(texto)) {
+				return TipoComando.PORC;
+			}else if ("=".equals(texto)) {
+				return TipoComando.IGUAL;
+			}else if (",".equals(texto)) {
+				return TipoComando.VIRG;
+			}
+			
+		}
+		
+		return null;
+	}
+
+}

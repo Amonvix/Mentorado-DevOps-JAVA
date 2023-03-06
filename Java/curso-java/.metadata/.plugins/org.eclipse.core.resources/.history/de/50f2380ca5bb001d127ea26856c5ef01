@@ -1,0 +1,19 @@
+package com.amon.calculadora.modelo;
+
+public class Memoria {
+	
+	private static final Memoria instancia = new Memoria();
+	
+	private String nomeAtual= "";
+	
+		
+	private Memoria() {
+
+	}
+	
+	public static Memoria getInstacia() {
+		return instancia;
+	}
+	
+
+}
